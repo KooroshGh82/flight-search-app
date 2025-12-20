@@ -1,3 +1,31 @@
+# import requests
+# from bs4 import BeautifulSoup
+
+# def crawl_tours(url: str):
+#     headers = {"User-Agent": "Mozilla/5.0"}
+#     resp = requests.get(url, headers=headers)
+#     soup = BeautifulSoup(resp.text, "html.parser")
+
+#     tours = []
+
+#     for card in soup.select(".tour"):
+#         title = card.select_one(".title").text.strip()
+#         price = card.select_one(".price").text.strip()
+#         duration = card.select_one(".duration").text.strip()
+
+#         tours.append({
+#             "title": title,
+#             "price": price,
+#             "duration": duration,
+#         })
+
+#     return tours
+
+# tours = crawl_tours("https://nahalgasht.com/tours/foreign/")
+# print(tours)
+
+
+
 MOCK_TOURS = [
     {
         "origin": "تهران",
